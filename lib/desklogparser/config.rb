@@ -15,11 +15,13 @@ module Desklogparser
         opts.separator ''
         opts.separator 'Options:'
 
-        opts.on('-f', '--file LOGFILE', 'Specify the LOGFILE to parse') do |file|
+        opts.on('-f', '--file LOGFILE',
+                'Specify the LOGFILE to parse') do |file|
           options.file = file
         end
 
-        opts.on('--type [TYPE]', [:common, :combined], 'Select the logfile format (common, combined)') do |type|
+        opts.on('--type [TYPE]', [:common, :combined],
+                'Select the logfile format TYPE (common, combined)') do |type|
           options.transfer_type = type
         end
 
