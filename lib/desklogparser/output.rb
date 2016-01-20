@@ -14,7 +14,7 @@ module Desklogparser
       frequency_agents.keys.each do |day|
         puts "DAY: #{day} "
         frequency_agents[day].each do |agent|
-          puts "  COUNT: #{agent[0]} AGENT: #{agent[1]}"
+          puts "  AGENT: #{agent[0]} COUNT: #{agent[1]}"
         end
       end
     end
